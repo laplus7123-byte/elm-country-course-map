@@ -1,0 +1,137 @@
+/* A quiet country-club finish over the friendly golf-game layout. */
+:root {
+  --ink: #203f35;
+  --muted: #718477;
+  --line: #e1e4d9;
+  --gold: #b7a16b;
+  --east: #315b78;
+  --west: #9a4864;
+  background: #f4f5ed;
+}
+body {
+  background:
+    radial-gradient(ellipse 220px 62px at 88% 160px, #ffffff75 48%, transparent 50%),
+    radial-gradient(ellipse 135px 45px at 79% 145px, #ffffff65 48%, transparent 50%),
+    linear-gradient(180deg, #d5e9e7 0, #edf3e9 390px, #f6f5ed 820px, #eef1e6 100%);
+}
+.site-header { background: #183f35; border-bottom: 2px solid var(--gold); box-shadow: 0 5px 20px #214b3212; }
+.brand-mark { border: 1px solid #bba66c; background: #234d40; color: #dfd2ab; box-shadow: none; transform: none; }
+.brand-name { font-family: Georgia, "Times New Roman", serif; font-style: normal; font-weight: 500; letter-spacing: .035em; color: #fffdf5; font-size: 29px; text-shadow: none; }
+.brand-name b { font-weight: 500; color: #d7c48a; }
+.brand-name small { color: #cfdbce; font-size: 9px; letter-spacing: .08em; margin-top: 8px; }
+.official-link { color: #efe9d8; background: transparent; border: 1px solid #85927b; border-radius: 18px; box-shadow: none; font-weight: 550; padding: 10px 17px; }
+.official-link:hover { background: #ffffff0d; transform: none; }
+.page-heading { margin-bottom: 27px; }
+.eyebrow { background: #fffdf3c4; color: #5f7257; border: 1px solid #c2bd9d; box-shadow: none; font-size: 10px; padding: 6px 13px; font-weight: 650; letter-spacing: .16em; }
+.eyebrow span { color: #a68e50; font-size: 9px; }
+h1 { color: #234c3e; -webkit-text-stroke: 0; text-shadow: none; font-size: clamp(27px, 2.8vw, 40px); font-weight: 730; letter-spacing: .035em; line-height: 1.35; }
+.intro { color: #5f7a6e; font-weight: 500; font-size: 12px; }
+.course-key > span { background: #fffef7ba; border: 1px solid #d8dfd0; box-shadow: none; color: #556e5f; font-weight: 600; border-radius: 12px; }
+.course-key .dot { border-width: 1px; box-shadow: none; }
+.golf-mascot { border-width: 2px; box-shadow: 0 8px 18px #416a551a; animation: none; }
+.golf-mascot:after { background: #58755b12; }
+.ball-eye { background: #53776a; }
+.ball-smile { border-color: #53776a; }
+.map-card, .hole-picker, .detail-card { border: 1px solid #d9dfd1; outline: none; border-radius: 17px; box-shadow: 0 10px 28px #21482f0c, 0 2px 3px #23482a04; }
+.map-toolbar { background: #fafbf5; border-bottom: 1px solid #e6e8dc; color: #546d60; padding: 13px 17px; font-size: 11px; font-weight: 600; }
+.live-dot { border-width: 1px; box-shadow: 0 0 0 2px #d4dfcf; width: 7px; height: 7px; }
+.zoom-controls { border: 1px solid #d5dccd; border-radius: 8px; background: white; }
+.zoom-controls button { color: #5a7263; font-weight: 550; }
+.zoom-controls button:hover { background: #f4f0e1; }
+.zoom-controls #zoomReset { border-color: #dfe3d6; font-weight: 500; }
+.map-hint { background: #f6f8ef; border-top: 1px solid #e3e8d9; color: #6f8364; font-weight: 500; padding: 13px 17px; }
+.map-hint svg { color: #8c9b70; }
+.map-hint span { color: #8c987d; }
+.hotspot.active { box-shadow: 0 0 0 3px #c4aa66, 0 0 0 5px #fffdf0, 0 2px 8px #8c773c55; }
+.hotspot.active:after { border-top-color: #b69950; }
+.hotspot:hover, .hotspot:focus-visible { box-shadow: 0 0 0 3px #fff, 0 0 0 5px #baa36c; }
+.hole-picker { background: #fffef8; padding: 20px 22px; }
+.picker-heading h2 { color: #406045; font-weight: 650; font-size: 13px; }
+.picker-heading h2 > span { color: #ae975e; }
+.course-tabs { background: #eff2e8; border-radius: 10px; }
+.course-tabs button { border-radius: 7px; font-weight: 600; }
+.course-tabs button.active { box-shadow: 0 2px 4px #233e3a12; }
+.hole-row > span { font-weight: 600; color: #86947b; }
+.hole-row button { border: 1px solid #dce4d3; border-bottom-width: 2px; background: #fff; color: #5d7653; font-weight: 650; border-radius: 8px; box-shadow: none; }
+.hole-row button.active { box-shadow: 0 2px 5px #294a3a16; }
+.map-note { color: #87947b; }
+.detail-card { border-color: #d6dcca; }
+.detail-top { border-bottom: 2px solid #bfac7a; padding: 20px 22px 18px; }
+.detail-top:after { border-width: 1px; border-color: #ffffff15; width: 140px; height: 140px; top: -70px; right: 55px; }
+.detail-course { font-weight: 650; font-size: 13px; letter-spacing: .035em; }
+.detail-course span { background: #ffffff17; color: #ffffffc7; border-radius: 4px; font-weight: 500; }
+.detail-top h2 > span { font-family: Georgia, "Times New Roman", serif; font-size: 53px; font-weight: 500; text-shadow: none; letter-spacing: -.035em; }
+.detail-top h2 > small { font-weight: 500; font-size: 12px; }
+.par-badge { background: #fcfaef; border: 1px solid #e6daba; box-shadow: none; border-radius: 12px; font-weight: 500; font-size: 10px; color: #657268; }
+.par-badge strong { font-family: Georgia, serif; font-weight: 500; font-size: 23px; color: #3e5c4e; }
+.media-tabs { background: #f8faf4; border-bottom: 1px solid #e4e9db; padding: 9px 16px; }
+.media-tabs button { font-weight: 550; color: #8a9a8a; border-width: 1px; border-radius: 8px; }
+.media-tabs button.active { border-color: #d3decd; box-shadow: 0 1px 3px #32543e08; }
+.expand-icon { border-width: 1px; box-shadow: 0 2px 5px #183a2912; border-radius: 8px; background: #fffcf0e8; color: #526e57; }
+.media-navigation { background: #244b3edb; border: 1px solid #ded4b6; box-shadow: none; border-radius: 13px; font-weight: 500; bottom: 40px; }
+.media-navigation button { font-weight: 500; }
+.media-figure figcaption { background: #f5f7ee; color: #7b8c71; font-weight: 500; }
+.detail-content { padding: 19px 21px; }
+.distance-summary { background: #f9f9f1; border: 1px solid #e3e2d1; border-radius: 12px; padding: 14px 15px; margin-bottom: 17px; }
+.metric-label { color: #7a896b; font-weight: 550; font-size: 10px; }
+.distance strong { color: #294b3e; font-weight: 550; letter-spacing: -.04em; font-size: 51px; }
+.distance > span { color: #8a987e; font-size: 15px; font-weight: 400; }
+.green-summary { color: #7b896a; border-color: #e2e5d7; background: #fefef8; border-radius: 6px; font-weight: 500; }
+legend { color: #728566; font-weight: 550; font-size: 10px; }
+.tee-options button, .green-options button { background: #fafcf6; border: 1px solid #d8e0ce; border-bottom-width: 2px; border-radius: 8px; color: #8a9a7e; font-weight: 650; }
+.tee-options button small { font-weight: 500; }
+.tee-options button.active, .green-options button.active { color: #7c6b3b; background: #f5f0dd; border-color: #c4b582; border-bottom-color: #b8a66e; box-shadow: 0 2px 4px #a28c4310; }
+.yardage-table { border-color: #e5eadf; background: #f8faf3; border-radius: 8px; }
+.yardage-table span { font-weight: 500; color: #94a08a; }
+.yardage-table strong { font-weight: 550; color: #6e8162; font-size: 14px; }
+.detail-navigation button { background: #f8faf3; border: 1px solid #dce4d1; border-bottom-width: 2px; color: #6d815c; border-radius: 8px; font-weight: 550; }
+.detail-navigation button:hover { background: #f0f4e6; }
+.source-line { color: #85937d; }
+.distance-note { color: #8c9885; }
+footer { border-top: 1px solid #cfd9c2; color: #8a9781; }
+footer summary { font-weight: 550; color: #748c63; }
+.dialog-bar { background: #f4f6ed; border-color: #dce1cf; }
+.dialog-bar p { color: #4f6b55; font-weight: 550; }
+.dialog-bar button { border: 1px solid #d5ddc9; color: #607854; background: #fcfdf7; font-weight: 550; }
+dialog { border: 2px solid #e4dfc7; border-radius: 15px; }
+dialog::backdrop { background: #132e24c2; }
+@media (max-width:850px) {
+  .site-header { height: 77px; padding: 0 16px; }
+  .brand-name { font-size: 25px; }
+  .brand-name small { font-size: 8px; letter-spacing: .02em; }
+  .brand-mark { width: 39px; height: 39px; }
+  .official-link { font-size: 9px; padding: 8px 10px; }
+  h1 { font-size: 27px; letter-spacing: 0; line-height: 1.4; }
+  .intro { font-size: 11px; }
+  .eyebrow { font-size: 9px; padding: 5px 11px; }
+  .course-key > span { font-size: 10px; padding: 6px 10px; }
+  .golf-mascot { scale: .9; }
+  .map-card, .hole-picker { border-radius: 15px; }
+  .map-toolbar { padding: 11px 12px; font-size: 10px; }
+  .map-hint { padding: 11px 12px; }
+  .hole-picker { padding: 16px 13px; }
+  .picker-heading h2 { font-size: 12px; }
+  .detail-card { border: 1px solid #d6dcca; border-radius: 22px 22px 0 0; }
+  .detail-top { padding: 17px 19px 15px; }
+  .detail-top h2 > span { font-size: 44px; }
+  .close-detail { box-shadow: none; background: #fcfaef; font-weight: 500; }
+  .detail-content { padding: 19px 20px 23px; }
+  .distance strong { font-size: 52px; }
+  .tee-options button small { font-size: 10px; }
+  .source-line, .distance-note { font-size: 10px; }
+  .sheet-backdrop:not([hidden]) { background: #183c2db3; }
+}
+
+/* Supplied club identity, without the decorative badge or mascot. */
+.site-header { gap: 24px; }
+.brand { min-width: 0; }
+.brand-logo { display: block; width: 470px; max-width: 100%; height: auto; }
+.official-link { flex-shrink: 0; white-space: nowrap; }
+.page-heading { min-height: 95px; }
+@media (max-width: 650px) {
+  .site-header { height: auto; padding: 17px 16px 13px; flex-wrap: wrap; gap: 10px; }
+  .brand { width: 100%; }
+  .brand-logo { width: 470px; }
+  .official-link { margin-left: auto; font-size: 9px; padding: 6px 10px; }
+  .page-heading { min-height: 0; }
+}
