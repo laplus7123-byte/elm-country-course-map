@@ -8,9 +8,9 @@
 
 - GitHub（公開）：https://github.com/laplus7123-byte/elm-country-course-map
 - 作業ブランチ：`main`
-- 現在の閲覧ページ：https://elm-course-map-kasai-20261026.laplus3.chatgpt.site/
-- 閲覧ページはSitesで本人限定公開中。GitHubリポジトリの公開と、Webサイトの公開範囲は別です。
-- GitHub PagesやGitHubからSitesへの自動デプロイは未設定です。GitHubへのpushだけでは閲覧ページは更新されません。
+- 公開ページ（GitHub Pages・誰でも閲覧可）：https://laplus7123-byte.github.io/elm-country-course-map/
+- `main` へのpushで `.github/workflows/pages.yml` が `dist/` を自動デプロイします。進行状況はGitHubのActionsタブで確認できます。
+- 以前のSites版（本人限定）：https://elm-course-map-kasai-20261026.laplus3.chatgpt.site/ 。GitHubからSitesへの自動デプロイは未設定で、pushしてもSites版は更新されません。
 
 ## 合意済みの見た目
 
@@ -75,7 +75,7 @@ python3 scripts/package-offline.py --output ./exports
 
 距離は公式Web表の確認値を使用しています。古いPDFや写真中の距離表記と一致しない場合は、現在採用しているWeb表を優先しています。地図は編集した概略図で、GPS測量図ではありません。出典と権利表記はREADMEとページ下部に残してください。
 
-現在のコードに外部APIキー・認証情報・Sitesのデプロイ設定は含まれません。静的ホスティングの配信対象は `dist/` です。ホスティングを変更する場合は、公開先とアクセス範囲をユーザーの意図に合わせて決めてください。
+現在のコードに外部APIキー・認証情報・Sitesのデプロイ設定は含まれません。静的ホスティングの配信対象は `dist/` で、GitHub Pagesへユーザーの依頼により一般公開しています。ホスティングを変更する場合は、公開先とアクセス範囲をユーザーの意図に合わせて決めてください。
 
 ## 続きを始めるとき
 

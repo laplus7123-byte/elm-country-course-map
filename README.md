@@ -10,9 +10,11 @@
 
 ## 閲覧ページ
 
-[エルムカントリー コースマップを開く](https://elm-course-map-kasai-20261026.laplus3.chatgpt.site/)
+[エルムカントリー コースマップを開く（GitHub Pages・一般公開）](https://laplus7123-byte.github.io/elm-country-course-map/)
 
-現在のWebページは本人限定です。GitHubではこのページのソース・写真・コースデータを管理します。
+`main` ブランチへpushすると、GitHub Actions（`.github/workflows/pages.yml`）が `dist/` を自動でGitHub Pagesへデプロイします。
+
+以前のSites版（本人限定）：https://elm-course-map-kasai-20261026.laplus3.chatgpt.site/ 。GitHubへのpushではSites版は更新されません。
 
 ## ローカルで表示
 
@@ -24,7 +26,7 @@ python3 -m http.server 8765 --directory dist
 
 ブラウザで `http://127.0.0.1:8765/` を開きます。
 
-配信する場合は `dist/` が公開対象です。GitHubへソースを保存するだけでは、Webサイトの公開設定は変わりません。
+配信する場合は `dist/` が公開対象です。
 
 ## ファイル構成
 
